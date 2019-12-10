@@ -49,19 +49,10 @@ func main() {
 
 
 func getCalculatedValue(mass float64) int {
-	//var mass float64
-	//fmt.Scan(&mass)
-	fmt.Println("......................................")
 	var result = mass / 3
 	var roundedresult int = 0
-	fmt.Println(mass, "/ 3  = ", result)
-
 	roundedresult = int(math.Trunc(result)) 
-	fmt.Println("redondeado = ", roundedresult)
-	
 	roundedresult = roundedresult - 2
-	fmt.Println("menos 2 =", roundedresult)
-	fmt.Println("......................................")
 
 	return roundedresult
 }
